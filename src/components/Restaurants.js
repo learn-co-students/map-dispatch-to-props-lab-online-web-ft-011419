@@ -5,7 +5,7 @@ class Restaurants extends Component {
 
   render() {
 
-    let restaurants = this.props.restaurants.map((restaurant, index) => <li key={index}>{restaurant.name}</li>);
+    let restaurants = this.props.iceCream.map((restaurant, index) => <li key={index}>{restaurant.name}</li>);
 
     return (
       <div>
@@ -18,7 +18,7 @@ class Restaurants extends Component {
 };
 
 const mapStateToProps = state => {
-  return { restaurants: state.restaurants }
+  return { iceCream: state.restaurants }
 }
 
 export default connect(mapStateToProps)(Restaurants);
